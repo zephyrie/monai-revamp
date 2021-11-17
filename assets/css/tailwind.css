@@ -1450,6 +1450,10 @@ video {
   line-height: 1.375;
 }
 
+.tracking-wide{
+  letter-spacing: 0.025em;
+}
+
 .text-black{
   --tw-text-opacity: 1;
   color: rgba(0, 0, 0, var(--tw-text-opacity));
