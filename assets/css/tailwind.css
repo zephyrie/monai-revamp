@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap');
 
 /*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */
 
@@ -621,16 +621,32 @@ video {
   right: 0px;
 }
 
+.right-1{
+  right: 0.25rem;
+}
+
 .right-16{
   right: 4rem;
+}
+
+.right-1\.5{
+  right: 0.375rem;
 }
 
 .bottom-0{
   bottom: 0px;
 }
 
+.bottom-1{
+  bottom: 0.25rem;
+}
+
 .bottom-2{
   bottom: 0.5rem;
+}
+
+.bottom-1\.5{
+  bottom: 0.375rem;
 }
 
 .left-0{
@@ -699,6 +715,18 @@ video {
 
 .col-start-9{
   grid-column-start: 9;
+}
+
+.row-span-1{
+  grid-row: span 1 / span 1;
+}
+
+.row-span-2{
+  grid-row: span 2 / span 2;
+}
+
+.row-span-3{
+  grid-row: span 3 / span 3;
 }
 
 .row-start-1{
@@ -772,6 +800,11 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.my-20{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
 .my-1\.5{
   margin-top: 0.375rem;
   margin-bottom: 0.375rem;
@@ -785,8 +818,16 @@ video {
   margin-top: 1rem;
 }
 
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .mt-16{
   margin-top: 4rem;
+}
+
+.mt-20{
+  margin-top: 5rem;
 }
 
 .mt-1\.5{
@@ -799,6 +840,10 @@ video {
 
 .mr-auto{
   margin-right: auto;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 
 .mb-5{
@@ -1003,6 +1048,10 @@ video {
   grid-auto-columns: max-content;
 }
 
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -1080,8 +1129,8 @@ video {
   row-gap: 6rem;
 }
 
-.gap-y-40{
-  row-gap: 10rem;
+.self-end{
+  align-self: flex-end;
 }
 
 .self-center{
@@ -1094,6 +1143,10 @@ video {
 
 .rounded-md{
   border-radius: 0.375rem;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
 }
 
 .rounded-full{
@@ -1112,8 +1165,16 @@ video {
   border-top-width: 2px;
 }
 
+.border-t{
+  border-top-width: 1px;
+}
+
 .border-b-2{
   border-bottom-width: 2px;
+}
+
+.border-b{
+  border-bottom-width: 1px;
 }
 
 .border-solid{
@@ -1184,16 +1245,17 @@ video {
   background-color: rgba(245, 245, 245, var(--tw-bg-opacity));
 }
 
-.bg-hero-ball{
-  background-image: url('../img/hero_virus.png');
-}
-
 .bg-center{
   background-position: center;
 }
 
 .bg-no-repeat{
   background-repeat: no-repeat;
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-2{
@@ -1214,6 +1276,11 @@ video {
 
 .p-8{
   padding: 2rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-5{
@@ -1313,8 +1380,16 @@ video {
   padding-bottom: 4rem;
 }
 
+.pl-4{
+  padding-left: 1rem;
+}
+
 .pl-8{
   padding-left: 2rem;
+}
+
+.text-left{
+  text-align: left;
 }
 
 .text-center{
@@ -1323,6 +1398,11 @@ video {
 
 .text-right{
   text-align: right;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .text-lg{
@@ -1433,8 +1513,15 @@ video {
   transition-duration: 300ms;
 }
 
+.line-clamp-3{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Mulish', sans-serif;
 }
 
 p {
@@ -1453,6 +1540,10 @@ li::marker {
   line-height: 2rem;
   --tw-text-opacity: 1;
   color: rgba(93, 193, 183, var(--tw-text-opacity));
+}
+
+.code {
+  font-family: 'Space Mono', monospace;
 }
 
 .container {
@@ -1598,12 +1689,45 @@ li::marker {
 
 .external-link {
   --tw-text-opacity: 1;
-  color: rgba(93, 193, 183, var(--tw-text-opacity));
+  color: rgba(2, 163, 163, var(--tw-text-opacity));
 }
 
 .external-link:after {
   padding-left: 0.5rem;
   content: url('../img/external_link_icon.png')
+}
+
+#hero-area {
+  position: relative;
+}
+
+.hero-image {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 90px;
+  z-index: -2;
+}
+
+.scroll-down {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 10px;
+}
+
+.particles-js-canvas-el {
+  position: absolute;
+  z-index: -5;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 @media (min-width: 640px){

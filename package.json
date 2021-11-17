@@ -22,6 +22,7 @@
         "tailwindcss": "^2.2.19"
     },
     "dependencies": {
+        "@tailwindcss/line-clamp": "^0.2.2",
         "npm-watch": "^0.11.0"
     }
 }
