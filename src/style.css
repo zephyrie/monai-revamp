@@ -37,7 +37,7 @@ li::marker {
 
 .section-heading,
 .section-heading-long {
-    @apply text-5xl text-gray-700 font-bold tracking-wide;
+    @apply text-gray-700 font-bold tracking-wide;
 }
 
 .section-heading-white {

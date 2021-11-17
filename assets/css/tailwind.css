@@ -1576,8 +1576,6 @@ li::marker {
 }
 
 .section-heading, .section-heading-long{
-  font-size: 3rem;
-  line-height: 1;
   font-weight: 700;
   letter-spacing: 0.025em;
   --tw-text-opacity: 1;
@@ -1585,8 +1583,6 @@ li::marker {
 }
 
 .section-heading-white, .section-heading-long{
-  font-size: 3rem;
-  line-height: 1;
   font-weight: 700;
   letter-spacing: 0.025em;
   --tw-text-opacity: 1;
