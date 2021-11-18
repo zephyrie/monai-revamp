@@ -681,10 +681,6 @@ video {
   grid-column: span 5 / span 5;
 }
 
-.col-span-6{
-  grid-column: span 6 / span 6;
-}
-
 .col-span-7{
   grid-column: span 7 / span 7;
 }
@@ -703,10 +699,6 @@ video {
 
 .col-start-4{
   grid-column-start: 4;
-}
-
-.col-start-6{
-  grid-column-start: 6;
 }
 
 .col-start-8{
@@ -1054,8 +1046,8 @@ video {
   grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
-.grid-rows-2{
-  grid-template-rows: repeat(2, minmax(0, 1fr));
+.grid-rows-4{
+  grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 
 .grid-rows-6{
@@ -1301,11 +1293,6 @@ video {
   padding-bottom: 4rem;
 }
 
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .py-24{
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -1313,6 +1300,10 @@ video {
 
 .pt-4{
   padding-top: 1rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
 }
 
 .pt-12{
@@ -1355,12 +1346,12 @@ video {
   padding-bottom: 4rem;
 }
 
-.pl-4{
-  padding-left: 1rem;
+.pb-20{
+  padding-bottom: 5rem;
 }
 
-.pl-6{
-  padding-left: 1.5rem;
+.pl-4{
+  padding-left: 1rem;
 }
 
 .pl-8{
@@ -1826,6 +1817,10 @@ li::marker {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .sm\:grid-rows-2{
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:text-left{
     text-align: left;
   }
@@ -1926,8 +1921,8 @@ li::marker {
     grid-row-start: 1;
   }
 
-  .lg\:mb-0{
-    margin-bottom: 0px;
+  .lg\:mt-0{
+    margin-top: 0px;
   }
 
   .lg\:block{
@@ -1975,8 +1970,16 @@ li::marker {
     padding-bottom: 4rem;
   }
 
+  .lg\:pt-16{
+    padding-top: 4rem;
+  }
+
   .lg\:pr-20{
     padding-right: 5rem;
+  }
+
+  .lg\:text-left{
+    text-align: left;
   }
 
   .lg\:shadow-none{

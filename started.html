@@ -71,9 +71,9 @@
   <section id="contributors" class="py-16">
     <div class="container">
       <div class="flex flex-wrap items-center">
-        <div class="w-1/2">
+        <div class="w-full lg:w-1/2">
           <h2 class="mb-6 section-heading">Get Started</h2>
-          <div class="flex flex-wrap p-4">
+          <div class="w-full sm:3/5">
             <p class="py-2">Are you looking to get started with Project MONAI? You can find installation and tutorial links below to help you quickly get started. If you're a more visual learner, you can find videos from our MONAI Bootcamp</p>
 
             <p class="py-2">For MONAI, You'll find Jupyter Notebooks available to help you through fundamental components and workflows, including 2D and 3D Classification and Segmentation, Image Registration, Digital Pathology, and Accelerated Training.</p>
@@ -82,7 +82,7 @@
 
             <p class="py-2">For MONAI App SDK, you'll find example deployment apps starting with a simple app to a MedNIST segmentation tutorial. These tutorials will give you the skill to create your own deployment application.</p>
           </div>
-          <div class="grid grid-cols-2 grid-rows-2 gap-y-4 pl-6">
+          <div class="grid grid-cols1 sm:grid-cols-2 grid-rows-4 sm:grid-rows-2 gap-y-4 mx-auto mt-8 lg:mt-0 text-center lg:text-left">
             <a href="#installation"><span class="anchor-link font-semibold">Installation</span></a>
             <a href="#monaicore"><span class="anchor-link font-semibold">MONAI Label Apps</span></a>
             <a href="#monailabel"><span class="anchor-link font-semibold">MONAI Core Tutorials</span></a>
@@ -90,8 +90,8 @@
 
           </div>
         </div>
-        <div class="flex justify-center w-1/2">
-          <img src="assets/img/big_plane.png">
+        <div class="flex justify-center w-full lg:w-1/2">
+          <img class="hidden lg:block lg:w-3/4 xl:auto" src="assets/img/big_plane.png">
         </div>
       </div>
     </div>
@@ -109,7 +109,7 @@
   <section id="installation" class="pt-16 bg-neutral-lightgray">
     <div class="relative container py-16 z-10">
       <h2 class="section-heading py-8">Installation</h2>
-      <div class="grid grid-cols-2 gap-x-8 gap-y-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8">
         <div class="p-8 bg-neutral-purewhite rounded-lg">
           <h2 class="text-brand-primary font-bold text-3xl">MONAI Core</h2>
           <p class="my-2">A PyTorch-based, open-source framework for deep learning in healthcare imaging used to create state-of-the-art, end-to-end training workflows.</p>
@@ -150,7 +150,7 @@
   <section id="monaicore" class="bg-brand-dark">
     <div class="relative container py-16 z-10">
       <h2 class="section-heading-white py-8">MONAI Core Tutorials</h2>
-      <div class="grid grid-cols-2 gap-x-8 gap-y-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8">
         <div class="p-8 bg-neutral-purewhite rounded-lg">
           <h2 class="font-bold text-3xl">2D Classification Examples</h2>
           <p class="mt-6">Image classification with MedNIST dataset</p>
@@ -218,7 +218,7 @@
   <section id="monailabel" class="bg-neutral-lightgray">
     <div class="relative container py-16 z-10">
       <h2 class="section-heading py-8">MONAI Label Sample Applications</h2>
-      <div class="grid grid-cols-2 gap-x-8 gap-y-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8">
         <div class="p-8 bg-neutral-purewhite rounded-lg">
           <h2 class="font-bold text-3xl">Left Atrium Semantic Segmentation</h2>
           <p class="mt-6">DeepEdit Model Trained for Left Atrium in the heart</p>
@@ -253,7 +253,7 @@
   <section id="monaideploy" class="bg-brand-light pb-16">
     <div class="relative container py-16 z-10">
       <h2 class="section-heading py-8">MONAI Deploy Tutorials</h2>
-      <div class="grid grid-cols-2 gap-x-8 gap-y-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-8">
         <div class="p-8 bg-neutral-purewhite rounded-lg">
           <h2 class="font-bold text-3xl">MONAI Deploy App SDK</h2>
           <p class="mt-6">Creating a simple Deployment App</p>
