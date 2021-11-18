@@ -32,12 +32,12 @@ li::marker {
 
 .page-scroll.active,
 .page-scroll:hover {
-    @apply text-brand;
+    @apply text-brand-primary;
 }
 
 .section-heading,
 .section-heading-long {
-    @apply text-gray-700 font-bold tracking-wide;
+    @apply text-5xl text-gray-700 font-bold tracking-wide;
 }
 
 .section-heading-white {
@@ -82,9 +82,24 @@ li::marker {
     background-image: linear-gradient(178deg, #FFFFFF calc(50% - 2px), #05789E 50%);
 }
 
+.brand-angle-top-gray {
+    @apply h-40;
+    background-image: linear-gradient(178deg, #F5F5F5 calc(50% - 2px), #05789E 50%);
+}
+
+.brand-angle-top-light {
+    @apply h-40;
+    background-image: linear-gradient(178deg, #F5F5F5 calc(50% - 2px), #E6F3F7 50%);
+}
+
 .brand-angle-bottom {
     @apply h-40;
     background-image: linear-gradient(-2deg, #FFFFFF calc(50% - 2px), #05789E 50%);
+}
+
+.brand-angle-bottom-gray {
+    @apply h-40;
+    background-image: linear-gradient(-2deg, #F5F5F5 calc(50% - 2px), #05789E 50%);
 }
 
 .square {
@@ -104,13 +119,19 @@ li::marker {
     border-top: 1px solid #bebebe;
 }
 
-.external-link {
+.external-link,
+.anchor-link {
     @apply text-brand-primary;
 }
 
 .external-link:after {
     @apply pl-2;
     content: url('../img/external_link_icon.png')
+}
+
+.anchor-link:after {
+    @apply pl-2;
+    content: url('../img/ic_arrow_down.png')
 }
 
 #hero-area {
