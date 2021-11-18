@@ -18,6 +18,31 @@ li::marker {
     @apply text-brand text-2xl;
 }
 
+.collapse.show {
+    @apply block;
+}
+
+.toggler-icon {
+    @apply block bg-gray-700 relative duration-300;
+    height: 2px;
+    width: 30px;
+    margin: 6px 0;
+}
+
+.active>.toggler-icon:nth-child(1) {
+    @apply transform rotate-45;
+    top: 7px;
+}
+
+.active>.toggler-icon:nth-child(2) {
+    @apply opacity-0;
+}
+
+.active>.toggler-icon:nth-child(3) {
+    top: -8px;
+    transform: rotate(135deg);
+}
+
 .code {
     font-family: 'Space Mono', monospace;
 }
@@ -51,10 +76,12 @@ li::marker {
     content: url('../img/title_decoration.png');
 }
 
-.section-heading-long:after {
-    @apply mb-4;
-    display: block;
-    content: url('../img/title_decoration_long.png');
+@variants responsive {
+    .section-heading-long:after {
+        @apply mb-4;
+        display: block;
+        content: url('../img/title_decoration_long.png');
+    }
 }
 
 .icon {
@@ -106,16 +133,24 @@ li::marker {
     aspect-ratio: 1/1;
 }
 
-.checkered:nth-child(4n+1),
-.checkered:nth-child(4n+2) {
+.sm\:grid-cols-4 .checkered:nth-child(4n+1),
+.sm\:grid-cols-4 .checkered:nth-child(4n+2) {
     border-right: 1px solid #bebebe;
 }
 
-.checkered:nth-child(4n) {
+.sm\:grid-cols-4 .checkered:nth-child(4n) {
     border-left: 1px solid #bebebe;
 }
 
-.checkered:nth-child(n+5) {
+.sm\:grid-cols-4 .checkered:nth-child(n+5) {
+    border-top: 1px solid #bebebe;
+}
+
+.grid-cols-2 .checkered:nth-child(2n) {
+    border-left: 1px solid #bebebe;
+}
+
+.grid-cols-2 .checkered:nth-child(n+3) {
     border-top: 1px solid #bebebe;
 }
 

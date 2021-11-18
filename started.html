@@ -11,12 +11,8 @@
 
   <title>MONAI - Medical Open Network for AI</title>
 
-  <!-- Icon -->
-  <link rel="stylesheet" type="text/css" href="assets/css/LineIcons.2.0.css">
   <!-- Animate -->
   <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-  <!-- Tiny Slider  -->
-  <link rel="stylesheet" type="text/css" href="assets/css/tiny-slider.css">
   <!-- Tailwind css -->
   <link rel="stylesheet" type="text/css" href="assets/css/tailwind.css">
 </head>
@@ -28,15 +24,15 @@
     <!-- Navbar Start -->
     <div class="navigation top-0 left-0 w-full z-30 duration-300">
       <div class="container">
-        <nav class="navbar navbar-expand-lg flex justify-end items-center relative duration-300">
+        <nav class="navbar navbar-expand-lg flex justify-end items-center justify-between relative duration-300">
           <a class="navbar-brand" href="index.html">
-            <img src="assets/img/MONAI-logo_color.png" alt="Logo">
+            <img class="py-2" src="assets/img/MONAI-logo_color.png" alt="Logo">
           </a>
           <button class="navbar-toggler focus:outline-none block lg:hidden" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="toggler-icon"></span>
-              <span class="toggler-icon"></span>
-              <span class="toggler-icon"></span>
-            </button>
+            <span class="toggler-icon"></span>
+            <span class="toggler-icon"></span>
+            <span class="toggler-icon"></span>
+          </button>
 
           <div class="collapse navbar-collapse hidden lg:block duration-300 shadow absolute top-100 left-0 mt-full bg-white z-20 px-5 w-full lg:static lg:bg-transparent lg:shadow-none" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto justify-end items-center lg:flex">
@@ -100,264 +96,254 @@
       </div>
     </div>
     </div>
-</body>
+  </section>
+  <!-- Contributors Section End -->
 
-</html>
-</section>
-<!-- Contributors Section End -->
+  <!-- Step-wise break Section Start -->
+  <section class='h-20 grid grid-cols-2'>
+    <div class='h-full bg-neutral-lightgray'></div>
+    <div class='h-full'></div>
+  </section>
+  <!-- Step-wise break Section End -->
 
-<!-- Step-wise break Section Start -->
-<section class='h-20 grid grid-cols-2'>
-  <div class='h-full bg-neutral-lightgray'></div>
-  <div class='h-full'></div>
-</section>
-<!-- Step-wise break Section End -->
-
-<section id="installation" class="pt-16 bg-neutral-lightgray">
-  <div class="relative container py-16 z-10">
-    <h2 class="section-heading py-8">Installation</h2>
-    <div class="grid grid-cols-2 gap-x-8 gap-y-8">
-      <div class="p-8 bg-neutral-purewhite rounded-lg">
-        <h2 class="text-brand-primary font-bold text-3xl">MONAI Core</h2>
-        <p class="my-2">A PyTorch-based, open-source framework for deep learning in healthcare imaging used to create state-of-the-art, end-to-end training workflows.</p>
-        <p class="mt-2">To install the current release run the following command:</p>
-        <p class="code p-4 bg-neutral-lightgray">
-          pip install monai
-        </p>
+  <section id="installation" class="pt-16 bg-neutral-lightgray">
+    <div class="relative container py-16 z-10">
+      <h2 class="section-heading py-8">Installation</h2>
+      <div class="grid grid-cols-2 gap-x-8 gap-y-8">
+        <div class="p-8 bg-neutral-purewhite rounded-lg">
+          <h2 class="text-brand-primary font-bold text-3xl">MONAI Core</h2>
+          <p class="my-2">A PyTorch-based, open-source framework for deep learning in healthcare imaging used to create state-of-the-art, end-to-end training workflows.</p>
+          <p class="mt-2">To install the current release run the following command:</p>
+          <p class="code p-4 bg-neutral-lightgray">
+            pip install monai
+          </p>
+        </div>
+        <div class="p-8 bg-neutral-purewhite rounded-lg">
+          <h2 class="text-brand-primary font-bold text-3xl">MONAI Label</h2>
+          <p class="my-2">An intelligent open-source medical image labeling and learning tool that enables you to create annotated datasets and build AI annotation models quickly.</p>
+          <p class="mt-2">To install the current release run the following command:</p>
+          <p class="code p-4 bg-neutral-lightgray">
+            pip install monailabel
+          </p>
+        </div>
+        <div class="p-8 bg-neutral-purewhite rounded-lg">
+          <h2 class="text-brand-primary font-bold text-3xl">MONAI Deploy</h2>
+          <p class="my-2">AA framework and associated tools to design, verify and analyze the performance of AI-driven applications in the healthcare domain.</p>
+          <p class="mt-2">To install MONAI Deploy App SDK run the following command:</p>
+          <p class="code p-4 bg-neutral-lightgray">
+            pip install monai-deploy-app-sdk
+          </p>
+          <p class="mt-4">To install MONAI Inference Server (MIS) run the following command:</p>
+          <p class="code p-4 bg-neutral-lightgray">
+            pip install monai-deploy-inference-server
+          </p>
+        </div>
       </div>
-      <div class="p-8 bg-neutral-purewhite rounded-lg">
-        <h2 class="text-brand-primary font-bold text-3xl">MONAI Label</h2>
-        <p class="my-2">An intelligent open-source medical image labeling and learning tool that enables you to create annotated datasets and build AI annotation models quickly.</p>
-        <p class="mt-2">To install the current release run the following command:</p>
-        <p class="code p-4 bg-neutral-lightgray">
-          pip install monailabel
-        </p>
+      <img class="absolute bottom-0 right-0 w-1/3 -z-10" src="assets/img/sphere and plane.png" />
+    </div>
+  </section>
+
+  <!-- Slant-up-bottom break Section Start -->
+  <section class='brand-angle-top-gray'></section>
+  <!-- Slant-up-bottom break Section End -->
+
+  <section id="monaicore" class="bg-brand-dark">
+    <div class="relative container py-16 z-10">
+      <h2 class="section-heading-white py-8">MONAI Core Tutorials</h2>
+      <div class="grid grid-cols-2 gap-x-8 gap-y-8">
+        <div class="p-8 bg-neutral-purewhite rounded-lg">
+          <h2 class="font-bold text-3xl">2D Classification Examples</h2>
+          <p class="mt-6">Image classification with MedNIST dataset</p>
+          <a href="https://github.com/Project-MONAI/tutorials/blob/master/2d_classification/mednist_tutorial.ipynb" target="_blank">
+            <p class="external-link font-bold">2D image classification demo </p>
+          </a>
+        </div>
+        <div class="p-8 bg-neutral-purewhite rounded-lg">
+          <h2 class="font-bold text-3xl">2D Segmentation Examples</h2>
+          <p class="mt-6">Training and evaluation code examples for 2D medical image segmentation</p>
+          <a href="https://github.com/Project-MONAI/tutorials/tree/master/2d_segmentation/torch" target="_blank">
+            <p class="external-link font-bold">2D image segmentation with Unet</p>
+          </a>
+        </div>
+        <div class="p-8 bg-neutral-purewhite rounded-lg">
+          <h2 class="font-bold text-3xl">3D Classification Examples</h2>
+          <p class="mt-6">Training and evaluation code examples for 3D medical image classification</p>
+          <a href="https://github.com/Project-MONAI/tutorials/tree/master/3d_classification/torch" target="_blank">
+            <p class="external-link font-bold">Brain MRI classification examples</p>
+          </a>
+          <p class="mt-6">Training and evaluation code examples for 3D medical image classification (with PyTorch Ignite)</p>
+          <a href="https://github.com/Project-MONAI/tutorials/tree/master/3d_classification/ignite" target="_blank">
+            <p class="external-link font-bold">Brain MRI classification examples with Ignite</p>
+          </a>
+        </div>
+        <div class="p-8 bg-neutral-purewhite rounded-lg">
+          <h2 class="font-bold text-3xl">3D Segmentation Examples</h2>
+          <p class="mt-6">Brain tumor 3D segmentation</p>
+          <a href="https://github.com/Project-MONAI/tutorials/blob/master/3d_segmentation/brats_segmentation_3d.ipynb" target="_blank">
+            <p class="external-link font-bold">Brats segmentation tutorial </p>
+          </a>
+          <p class="mt-6">Training and evaluation code examples for 3D medical image segmentation</p>
+          <a href="https://github.com/Project-MONAI/tutorials/tree/master/3d_segmentation/torch" target="_blank">
+            <p class="external-link font-bold">Volumetric image segmentation examples </p>
+          </a>
+          <p class="mt-6">Build a segmentation workflow (with PyTorch Ignite)</p>
+          <a href="https://github.com/Project-MONAI/tutorials/blob/master/3d_segmentation/unet_segmentation_3d_ignite.ipynb" target="_blank">
+            <p class="external-link font-bold">Segmentation workflow demo with Ignite </p>
+          </a>
+        </div>
+        <div class="p-8 bg-neutral-purewhite rounded-lg">
+          <h2 class="font-bold text-3xl">Performance Acceleration</h2>
+          <p class="mt-6">Fast training under MONAI features</p>
+          <a href="https://github.com/Project-MONAI/tutorials/blob/master/acceleration/fast_training_tutorial.ipynb" target="_blank">
+            <p class="external-link font-bold">Fast training demo </p>
+          </a>
+          <p class="mt-6">Data-parallel training with multiple-GPUs</p>
+          <a href="https://github.com/Project-MONAI/tutorials/blob/master/acceleration/multi_gpu_test.ipynb" target="_blank">
+            <p class="external-link font-bold">Multi-GPU training demo </p>
+          </a>
+          <p class="mt-6">GPU-based preprocessing in native PyTorch</p>
+          <a href="https://github.com/Project-MONAI/tutorials/blob/master/acceleration/transform_speed.ipynb" target="_blank">
+            <p class="external-link font-bold">GPU-based pipeline demo </p>
+          </a>
+        </div>
       </div>
-      <div class="p-8 bg-neutral-purewhite rounded-lg">
-        <h2 class="text-brand-primary font-bold text-3xl">MONAI Deploy</h2>
-        <p class="my-2">AA framework and associated tools to design, verify and analyze the performance of AI-driven applications in the healthcare domain.</p>
-        <p class="mt-2">To install MONAI Deploy App SDK run the following command:</p>
-        <p class="code p-4 bg-neutral-lightgray">
-          pip install monai-deploy-app-sdk
-        </p>
-        <p class="mt-4">To install MONAI Inference Server (MIS) run the following command:</p>
-        <p class="code p-4 bg-neutral-lightgray">
-          pip install monai-deploy-inference-server
-        </p>
+      <img class="absolute bottom-0 right-0 w-1/3 -z-10" src="assets/img/medium_sphere.png" />
+    </div>
+  </section>
+
+  <!-- Slant-up-bottom break Section Start -->
+  <section class='brand-angle-bottom-gray'></section>
+  <!-- Slant-up-bottom break Section End -->
+
+  <section id="monailabel" class="bg-neutral-lightgray">
+    <div class="relative container py-16 z-10">
+      <h2 class="section-heading py-8">MONAI Label Sample Applications</h2>
+      <div class="grid grid-cols-2 gap-x-8 gap-y-8">
+        <div class="p-8 bg-neutral-purewhite rounded-lg">
+          <h2 class="font-bold text-3xl">Left Atrium Semantic Segmentation</h2>
+          <p class="mt-6">DeepEdit Model Trained for Left Atrium in the heart</p>
+          <a href="https://github.com/Project-MONAI/MONAILabel/tree/main/sample-apps/deepedit_left_atrium" target="_blank">
+            <p class="external-link font-bold">DeepEdit</p>
+          </a>
+          <p class="mt-6">DeepGrow Model Trained for Left Atrium in the heart</p>
+          <a href="https://github.com/Project-MONAI/MONAILabel/tree/main/sample-apps/deepgrow_left_atrium" target="_blank">
+            <p class="external-link font-bold">DeepGrow</p>
+          </a>
+        </div>
+        <div class="p-8 bg-neutral-purewhite rounded-lg">
+          <h2 class="font-bold text-3xl">Spleen Semantic Segmentation</h2>
+          <p class="mt-6">DeepEdit Model Trained for Spleen Segmentation</p>
+          <a href="https://github.com/Project-MONAI/MONAILabel/tree/main/sample-apps/deepedit_spleen" target="_blank">
+            <p class="external-link font-bold">DeepEdit</p>
+          </a>
+          <p class="mt-6">DeepGrow Model Trained for Spleen Segmentation</p>
+          <a href="https://github.com/Project-MONAI/MONAILabel/tree/main/sample-apps/deepgrow_spleen" target="_blank">
+            <p class="external-link font-bold">DeepGrow</p>
+          </a>
+
+        </div>
       </div>
     </div>
-    <img class="absolute bottom-0 right-0 w-1/3 -z-10" src="assets/img/sphere and plane.png" />
-  </div>
-</section>
+  </section>
 
-<!-- Slant-up-bottom break Section Start -->
-<section class='brand-angle-top-gray'></section>
-<!-- Slant-up-bottom break Section End -->
+  <!-- Slant-up-bottom break Section Start -->
+  <section class='brand-angle-top-light'></section>
+  <!-- Slant-up-bottom break Section End -->
 
-<section id="monaicore" class="bg-brand-dark">
-  <div class="relative container py-16 z-10">
-    <h2 class="section-heading-white py-8">MONAI Core Tutorials</h2>
-    <div class="grid grid-cols-2 gap-x-8 gap-y-8">
-      <div class="p-8 bg-neutral-purewhite rounded-lg">
-        <h2 class="font-bold text-3xl">2D Classification Examples</h2>
-        <p class="mt-6">Image classification with MedNIST dataset</p>
-        <a href="https://github.com/Project-MONAI/tutorials/blob/master/2d_classification/mednist_tutorial.ipynb" target="_blank">
-          <p class="external-link font-bold">2D image classification demo </p>
-        </a>
-      </div>
-      <div class="p-8 bg-neutral-purewhite rounded-lg">
-        <h2 class="font-bold text-3xl">2D Segmentation Examples</h2>
-        <p class="mt-6">Training and evaluation code examples for 2D medical image segmentation</p>
-        <a href="https://github.com/Project-MONAI/tutorials/tree/master/2d_segmentation/torch" target="_blank">
-          <p class="external-link font-bold">2D image segmentation with Unet</p>
-        </a>
-      </div>
-      <div class="p-8 bg-neutral-purewhite rounded-lg">
-        <h2 class="font-bold text-3xl">3D Classification Examples</h2>
-        <p class="mt-6">Training and evaluation code examples for 3D medical image classification</p>
-        <a href="https://github.com/Project-MONAI/tutorials/tree/master/3d_classification/torch" target="_blank">
-          <p class="external-link font-bold">Brain MRI classification examples</p>
-        </a>
-        <p class="mt-6">Training and evaluation code examples for 3D medical image classification (with PyTorch Ignite)</p>
-        <a href="https://github.com/Project-MONAI/tutorials/tree/master/3d_classification/ignite" target="_blank">
-          <p class="external-link font-bold">Brain MRI classification examples with Ignite</p>
-        </a>
-      </div>
-      <div class="p-8 bg-neutral-purewhite rounded-lg">
-        <h2 class="font-bold text-3xl">3D Segmentation Examples</h2>
-        <p class="mt-6">Brain tumor 3D segmentation</p>
-        <a href="https://github.com/Project-MONAI/tutorials/blob/master/3d_segmentation/brats_segmentation_3d.ipynb" target="_blank">
-          <p class="external-link font-bold">Brats segmentation tutorial </p>
-        </a>
-        <p class="mt-6">Training and evaluation code examples for 3D medical image segmentation</p>
-        <a href="https://github.com/Project-MONAI/tutorials/tree/master/3d_segmentation/torch" target="_blank">
-          <p class="external-link font-bold">Volumetric image segmentation examples </p>
-        </a>
-        <p class="mt-6">Build a segmentation workflow (with PyTorch Ignite)</p>
-        <a href="https://github.com/Project-MONAI/tutorials/blob/master/3d_segmentation/unet_segmentation_3d_ignite.ipynb" target="_blank">
-          <p class="external-link font-bold">Segmentation workflow demo with Ignite </p>
-        </a>
-      </div>
-      <div class="p-8 bg-neutral-purewhite rounded-lg">
-        <h2 class="font-bold text-3xl">Performance Acceleration</h2>
-        <p class="mt-6">Fast training under MONAI features</p>
-        <a href="https://github.com/Project-MONAI/tutorials/blob/master/acceleration/fast_training_tutorial.ipynb" target="_blank">
-          <p class="external-link font-bold">Fast training demo </p>
-        </a>
-        <p class="mt-6">Data-parallel training with multiple-GPUs</p>
-        <a href="https://github.com/Project-MONAI/tutorials/blob/master/acceleration/multi_gpu_test.ipynb" target="_blank">
-          <p class="external-link font-bold">Multi-GPU training demo </p>
-        </a>
-        <p class="mt-6">GPU-based preprocessing in native PyTorch</p>
-        <a href="https://github.com/Project-MONAI/tutorials/blob/master/acceleration/transform_speed.ipynb" target="_blank">
-          <p class="external-link font-bold">GPU-based pipeline demo </p>
-        </a>
+  <section id="monaideploy" class="bg-brand-light pb-16">
+    <div class="relative container py-16 z-10">
+      <h2 class="section-heading py-8">MONAI Deploy Tutorials</h2>
+      <div class="grid grid-cols-2 gap-x-8 gap-y-8">
+        <div class="p-8 bg-neutral-purewhite rounded-lg">
+          <h2 class="font-bold text-3xl">MONAI Deploy App SDK</h2>
+          <p class="mt-6">Creating a simple Deployment App</p>
+          <a href="https://docs.monai.io/projects/monai-deploy-app-sdk/en/latest/getting_started/tutorials/01_simple_app.html" target="_blank">
+            <p class="external-link font-bold">Simple Classifier App</p>
+          </a>
+          <p class="mt-6">Creating a MedNIST Deployment App</p>
+          <a href="https://docs.monai.io/projects/monai-deploy-app-sdk/en/latest/getting_started/tutorials/02_mednist_app.html" target="_blank">
+            <p class="external-link font-bold">MedNIST Classifier App</p>
+          </a>
+        </div>
       </div>
     </div>
-    <img class="absolute bottom-0 right-0 w-1/3 -z-10" src="assets/img/medium_sphere.png" />
-  </div>
-</section>
+  </section>
 
-<!-- Slant-up-bottom break Section Start -->
-<section class='brand-angle-bottom-gray'></section>
-<!-- Slant-up-bottom break Section End -->
-
-<section id="monailabel" class="bg-neutral-lightgray">
-  <div class="relative container py-16 z-10">
-    <h2 class="section-heading py-8">MONAI Label Sample Applications</h2>
-    <div class="grid grid-cols-2 gap-x-8 gap-y-8">
-      <div class="p-8 bg-neutral-purewhite rounded-lg">
-        <h2 class="font-bold text-3xl">Left Atrium Semantic Segmentation</h2>
-        <p class="mt-6">DeepEdit Model Trained for Left Atrium in the heart</p>
-        <a href="https://github.com/Project-MONAI/MONAILabel/tree/main/sample-apps/deepedit_left_atrium" target="_blank">
-          <p class="external-link font-bold">DeepEdit</p>
-        </a>
-        <p class="mt-6">DeepGrow Model Trained for Left Atrium in the heart</p>
-        <a href="https://github.com/Project-MONAI/MONAILabel/tree/main/sample-apps/deepgrow_left_atrium" target="_blank">
-          <p class="external-link font-bold">DeepGrow</p>
-        </a>
-      </div>
-      <div class="p-8 bg-neutral-purewhite rounded-lg">
-        <h2 class="font-bold text-3xl">Spleen Semantic Segmentation</h2>
-        <p class="mt-6">DeepEdit Model Trained for Spleen Segmentation</p>
-        <a href="https://github.com/Project-MONAI/MONAILabel/tree/main/sample-apps/deepedit_spleen" target="_blank">
-          <p class="external-link font-bold">DeepEdit</p>
-        </a>
-        <p class="mt-6">DeepGrow Model Trained for Spleen Segmentation</p>
-        <a href="https://github.com/Project-MONAI/MONAILabel/tree/main/sample-apps/deepgrow_spleen" target="_blank">
-          <p class="external-link font-bold">DeepGrow</p>
-        </a>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Slant-up-bottom break Section Start -->
-<section class='brand-angle-top-light'></section>
-<!-- Slant-up-bottom break Section End -->
-
-<section id="monaideploy" class="bg-brand-light pb-16">
-  <div class="relative container py-16 z-10">
-    <h2 class="section-heading py-8">MONAI Deploy Tutorials</h2>
-    <div class="grid grid-cols-2 gap-x-8 gap-y-8">
-      <div class="p-8 bg-neutral-purewhite rounded-lg">
-        <h2 class="font-bold text-3xl">MONAI Deploy App SDK</h2>
-        <p class="mt-6">Creating a simple Deployment App</p>
-        <a href="https://docs.monai.io/projects/monai-deploy-app-sdk/en/latest/getting_started/tutorials/01_simple_app.html" target="_blank">
-          <p class="external-link font-bold">Simple Classifier App</p>
-        </a>
-        <p class="mt-6">Creating a MedNIST Deployment App</p>
-        <a href="https://docs.monai.io/projects/monai-deploy-app-sdk/en/latest/getting_started/tutorials/02_mednist_app.html" target="_blank">
-          <p class="external-link font-bold">MedNIST Classifier App</p>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer Section Start -->
-<footer id="footer" class="bg-neutral-lightgray py-2 border-t border-neutral-light_gray">
-  <div class="container">
-    <div class="flex flex-wrap items-center">
-      <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4">
-        <div class="mx-3">
-          <div class="footer-logo">
-            <img src="assets/img/MONAI-logo_color.png" alt="">
+  <!-- Footer Section Start -->
+  <footer id="footer" class="bg-neutral-lightgray py-2 border-t border-neutral-light_gray">
+    <div class="container">
+      <div class="flex flex-wrap items-center justify-between">
+        <div class="w-auto">
+          <div class="mx-3">
+            <div class="footer-logo">
+              <img src="assets/img/MONAI-logo_color.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="hidden lg:block w-auto">
+          <div class="mx-3 text-black">
+            <ul class="flex justify-between">
+              <li class="px-4">
+                <a href="about.html" class="footer-links">About Us</a>
+              </li>
+              <li class="px-4">
+                <a href="started.html" class="footer-links">Get Started</a>
+              </li>
+              <li class="px-4">
+                <a href="community.html" class="footer-links">Community</a>
+              </li>
+              <li class="px-4">
+                <a href="https://medium.com/@monai" class="footer-links">Blog</a>
+              </li>
+              <li class="px-4">
+                <a href="docs.html" class="footer-links">Docs</a>
+              </li>
+              <li class="px-4">
+                <a href="https://github.com/Project-MONAI" class="footer-links">GitHub</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-auto">
+          <div class="mx-3">
+            <ul class="social-icons flex justify-end">
+              <li class="mx-2">
+                <a href="https://twitter.com/ProjectMONAI">
+                  <i>
+                <img src="assets/img/twitter_icon_square.png"/>
+              </i>
+                </a>
+              </li>
+              <li class="mx-2">
+                <a href="https://medium.com/@monai">
+                  <i>
+                <img src="assets/img/medium_icon_square.png"/>
+              </i>
+                </a>
+              </li>
+              <li class="mx-2">
+                <a href="https://www.youtube.com/c/Project-MONAI">
+                  <i>
+                <img src="assets/img/youtube_icon_square.png"/>
+              </i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="w-full sm:w-1/2 md:w-1/2">
-        <div class="mx-3 text-black">
-          <ul class="flex justify-between">
-            <li>
-              <a href="about.html" class="footer-links">About Us</a>
-            </li>
-            <li>
-              <a href="started.html" class="footer-links">Get Started</a>
-            </li>
-            <li>
-              <a href="community.html" class="footer-links">Community</a>
-            </li>
-            <li>
-              <a href="https://medium.com/@monai" class="footer-links">Blog</a>
-            </li>
-            <li>
-              <a href="docs.html" class="footer-links">Docs</a>
-            </li>
-            <li>
-              <a href="https://github.com/Project-MONAI" class="footer-links">GitHub</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/4">
-        <div class="mx-3">
-          <ul class="social-icons flex justify-end">
-            <li class="mx-2">
-              <a href="https://twitter.com/ProjectMONAI">
-                <i>
-                <img src="assets/img/twitter_icon_square.png"/>
-              </i>
-              </a>
-            </li>
-            <li class="mx-2">
-              <a href="https://medium.com/@monai">
-                <i>
-                <img src="assets/img/medium_icon_square.png"/>
-              </i>
-              </a>
-            </li>
-            <li class="mx-2">
-              <a href="https://www.youtube.com/c/Project-MONAI">
-                <i>
-                <img src="assets/img/youtube_icon_square.png"/>
-              </i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
-  </div>
-</footer>
-<!-- Footer Section End -->
+  </footer>
+  <!-- Footer Section End -->
 
-<!-- Go to Top Link -->
-<a href="#" class="back-to-top w-10 h-10 fixed bottom-0 right-0 mb-5 mr-5 flex items-center justify-center rounded-full border-2 border-solid border-brand-dark text-white text-lg z-20">
-  <i class="transform -rotate-90">
-  <img src="assets/img/ic_arrow_right.png"/>
-</i></a>
-<!-- Preloader -->
-<!--     <div id="preloader">
-        <div class="loader" id="loader-1"></div>
-      </div> -->
-<!-- End Preloader -->
-<!-- All js Here -->
-<script src="assets/js/wow.js">
-</script>
-<script src="assets/js/tiny-slider.js"></script>
-<script src="assets/js/main.js"></script>
+  <!-- Go to Top Link -->
+  <a href="#" class="back-to-top w-10 h-10 fixed bottom-0 right-0 mb-5 mr-5 flex items-center justify-center rounded-full border border-solid border-brand-dark text-white text-lg z-20">
+    <i class="transform -rotate-90">
+        <img src="assets/img/ic_arrow_right.png"/>
+      </i>
+  </a>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>

@@ -31,7 +31,8 @@ module.exports = {
                     lightgray: '#F5F5F5',
                     purewhite: '#FFFFFF'
                 }
-            }
+            },
+            display: ['hover', 'group-hover']
         }
     },
     variants: {},

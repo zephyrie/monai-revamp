@@ -8,6 +8,30 @@
         mobile: false
     });
     wow.init();
+    window.onscroll = function() {
+        // show or hide the back-top-top button
+        var backToTop = document.querySelector(".back-to-top");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            backToTop.style.display = "flex";
+        } else {
+            backToTop.style.display = "none";
+        }
+    }
+
+    //===== close navbar-collapse when a  clicked
+    let navbarToggler = document.querySelector(".navbar-toggler");
+    var navbarCollapse = document.querySelector(".navbar-collapse");
+    navbarToggler.addEventListener('click', function() {
+        navbarToggler.classList.toggle("active");
+        navbarCollapse.classList.toggle('show')
+    })
+
+    // let docsDropdown = document.querySelector(".docsDropdown");
+    // let docsDropWrapper = document.querySelector(".docsDropWrapper");
+    // docsDropdown.addEventListener('mouseover', function() {
+    //     console.log("Hello");
+    //     docsDropWrapper.classList.toggle('show');
+    // })
 
     // Main.js
     /* ---- particles.js config ---- */
