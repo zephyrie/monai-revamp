@@ -837,8 +837,8 @@ video {
   margin-bottom: 3rem;
 }
 
-.mb-80{
-  margin-bottom: 20rem;
+.mb-40{
+  margin-bottom: 10rem;
 }
 
 .ml-5{
@@ -1310,8 +1310,8 @@ video {
   padding-top: 4rem;
 }
 
-.pt-52{
-  padding-top: 13rem;
+.pt-24{
+  padding-top: 6rem;
 }
 
 .pr-4{
@@ -1938,6 +1938,10 @@ li::marker {
     margin-top: 0px;
   }
 
+  .lg\:mb-80{
+    margin-bottom: 20rem;
+  }
+
   .lg\:block{
     display: block;
   }
@@ -1989,6 +1993,10 @@ li::marker {
 
   .lg\:pt-16{
     padding-top: 4rem;
+  }
+
+  .lg\:pt-52{
+    padding-top: 13rem;
   }
 
   .lg\:pr-20{
