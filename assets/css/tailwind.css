@@ -1930,10 +1930,6 @@ li::marker {
     justify-self: center;
   }
 
-  .md\:pt-16{
-    padding-top: 4rem;
-  }
-
   .md\:pr-20{
     padding-right: 5rem;
   }
